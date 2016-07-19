@@ -25,11 +25,6 @@
     <build>
         <finalName>lra-coordinator</finalName>
         <plugins>
-          <plugin>
-            <inherited>false</inherited>
-            <groupId>org.sonatype.plugins</groupId>
-            <artifactId>nexus-staging-maven-plugin</artifactId>
-          </plugin>
             <plugin>
                 <groupId>org.wildfly.swarm</groupId>
                 <artifactId>wildfly-swarm-plugin</artifactId>

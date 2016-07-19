@@ -31,11 +31,6 @@ Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
  
   <build>
     <plugins>
-      <plugin>
-        <inherited>false</inherited>
-        <groupId>org.sonatype.plugins</groupId>
-        <artifactId>nexus-staging-maven-plugin</artifactId>
-      </plugin>
     </plugins>
   </build>
 

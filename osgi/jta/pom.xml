@@ -166,11 +166,6 @@
 	   </pluginManagement>
 	   <plugins>
       <plugin>
-        <inherited>false</inherited>
-        <groupId>org.sonatype.plugins</groupId>
-        <artifactId>nexus-staging-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
 			   <groupId>org.apache.felix</groupId>
 			   <artifactId>maven-bundle-plugin</artifactId>
 			   <version>${maven-bundle-plugin.version}</version>

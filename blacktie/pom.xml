@@ -373,11 +373,6 @@
             </plugins>
         </pluginManagement>
         <plugins>
-          <plugin>
-            <inherited>false</inherited>
-            <groupId>org.sonatype.plugins</groupId>
-            <artifactId>nexus-staging-maven-plugin</artifactId>
-          </plugin>
         </plugins>
     </build>
     <profiles>

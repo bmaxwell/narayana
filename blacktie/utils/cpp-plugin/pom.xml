@@ -170,16 +170,6 @@
                 <version>2.3</version>
             </plugin>
             <plugin>
-              <groupId>org.sonatype.plugins</groupId>
-              <artifactId>nexus-staging-maven-plugin</artifactId>
-              <extensions>true</extensions>
-              <configuration>
-                <serverId>jboss-releases-repository</serverId>
-                <nexusUrl>https://repository.jboss.org/nexus/</nexusUrl>
-                <autoReleaseAfterClose>true</autoReleaseAfterClose>
-              </configuration>
-            </plugin>
-            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
                 <version>2.1.2</version>

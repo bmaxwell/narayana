@@ -69,6 +69,7 @@
                 <source>../WSTX/classes11</source>
                 <source>../recovery/src</source>
                 <source>../sar/src</source>
+                <source>../bridge/src</source>
               </sources>
             </configuration>
           </execution>

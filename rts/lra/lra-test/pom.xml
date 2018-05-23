@@ -75,6 +75,7 @@
                         <lra.http.host>${lra.http.host}</lra.http.host>
                         <lra.http.port>${lra.http.port}</lra.http.port>
                         <service.http.port>${service.http.port}</service.http.port>
+                        <java.net.preferIPv4Stack>true</java.net.preferIPv4Stack>
                     </properties>
                 </configuration>
             </plugin>

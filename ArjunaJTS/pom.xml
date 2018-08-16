@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <!-- JBoss, Home of Professional Open Source Copyright 2009, Red Hat Middleware 
 		LLC, and individual contributors as indicated by the @author tags. See the 
@@ -15,7 +15,7 @@
   <parent>
     <groupId>org.jboss.narayana</groupId>
     <artifactId>narayana-all</artifactId>
-    <version>5.9.0.Final</version>
+    <version>5.9.0.Final-redhat-00001</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -25,8 +25,6 @@
   <name>Narayana: ArjunaJTS</name>
   <description>Narayana: ArjunaJTS</description>
   <build>
-    <plugins>
-    </plugins>
   </build>
   <modules>
     <module>orbportability</module>
@@ -81,8 +79,7 @@
                   </goals>
                   <configuration>
                     <skip>false</skip>
-                    <systemPropertyVariables
-                      combine.children="append">
+                    <systemPropertyVariables combine.children="append">
                       <OrbPortabilityEnvironmentBean.orbImpleClassName>com.arjuna.orbportability.internal.orbspecific.jacorb.orb.implementations.jacorb_2_0</OrbPortabilityEnvironmentBean.orbImpleClassName>
                       <OrbPortabilityEnvironmentBean.poaImpleClassName>com.arjuna.orbportability.internal.orbspecific.jacorb.oa.implementations.jacorb_2_0</OrbPortabilityEnvironmentBean.poaImpleClassName>
                       <OrbPortabilityEnvironmentBean.orbDataClassName>com.arjuna.orbportability.internal.orbspecific.versions.jacorb_2_0</OrbPortabilityEnvironmentBean.orbDataClassName>
@@ -118,8 +115,7 @@
                   </goals>
                   <configuration>
                     <skip>false</skip>
-                    <systemPropertyVariables
-                      combine.children="append">
+                    <systemPropertyVariables combine.children="append">
                       <OrbPortabilityEnvironmentBean.orbImpleClassName>com.arjuna.orbportability.internal.orbspecific.javaidl.orb.implementations.javaidl_1_4</OrbPortabilityEnvironmentBean.orbImpleClassName>
                       <OrbPortabilityEnvironmentBean.poaImpleClassName>com.arjuna.orbportability.internal.orbspecific.javaidl.oa.implementations.javaidl_1_4</OrbPortabilityEnvironmentBean.poaImpleClassName>
                       <OrbPortabilityEnvironmentBean.orbDataClassName>com.arjuna.orbportability.internal.orbspecific.versions.javaidl_1_4</OrbPortabilityEnvironmentBean.orbDataClassName>
@@ -155,9 +151,8 @@
                   </goals>
                   <configuration>
                     <skip>false</skip>
-                    <systemProperties combine.children="append" />
-                    <systemPropertyVariables
-                      combine.children="append">
+                    <systemProperties combine.children="append"></systemProperties>
+                    <systemPropertyVariables combine.children="append">
                       <OrbPortabilityEnvironmentBean.orbImpleClassName>com.arjuna.orbportability.internal.orbspecific.ibmorb.orb.implementations.ibmorb_7_1</OrbPortabilityEnvironmentBean.orbImpleClassName>
                       <OrbPortabilityEnvironmentBean.poaImpleClassName>com.arjuna.orbportability.internal.orbspecific.ibmorb.oa.implementations.ibmorb_7_1</OrbPortabilityEnvironmentBean.poaImpleClassName>
                       <OrbPortabilityEnvironmentBean.orbDataClassName>com.arjuna.orbportability.internal.orbspecific.versions.ibmorb_7_1</OrbPortabilityEnvironmentBean.orbDataClassName>

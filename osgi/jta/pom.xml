@@ -15,7 +15,7 @@
    <parent>
 	   <groupId>org.jboss.narayana.osgi</groupId>
 	   <artifactId>narayana-osgi-parent</artifactId>
-	   <version>5.9.0.Final</version>
+	   <version>5.9.0.Final-redhat-00001</version>
 	   <relativePath>../pom.xml</relativePath>
    </parent>
 
@@ -175,19 +175,14 @@
 					   <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
 					   <Bundle-Version>${project.version}</Bundle-Version>
 					   <Bundle-Activator>org.jboss.narayana.osgi.jta.internal.Activator</Bundle-Activator>
-					   <Export-Package>
-						   org.jboss.tm*;version=${version.org.jboss.jboss-transaction-spi},
+					   <Export-Package>org.jboss.tm*;version=${version.org.jboss.jboss-transaction-spi},
 						   org.jboss.narayana.osgi.jta;version=${project.version},
 						   org.jboss.narayana.osgi.jta.command;version=${project.version},
-						   javax.transaction*;version="1.2.0"
-					   </Export-Package>
-					   <Private-Package>
-						   org.jboss.narayana.osgi.jta.internal,
+						   javax.transaction*;version="1.2.0"</Export-Package>
+					   <Private-Package>org.jboss.narayana.osgi.jta.internal,
 						   javax.transaction*,
-						   org.jboss.tm*
-					   </Private-Package>
-					   <Import-Package>
-						   javax.management,
+						   org.jboss.tm*</Private-Package>
+					   <Import-Package>javax.management,
 						   javax.naming,
 						   javax.naming.spi,
 						   javax.xml.parsers,
@@ -207,11 +202,9 @@
 						   org.apache.karaf.shell.api.action.lifecycle;resolution:=optional,
 						   javax.enterprise.util;resolution:=optional,
 						   javax.interceptor;resolution:=optional,
-						   javax.enterprise.context;resolution:=optional
-					   </Import-Package>
+						   javax.enterprise.context;resolution:=optional</Import-Package>
 					   <Embed-Transitive>true</Embed-Transitive>
-					   <Embed-Dependency>
-						   jboss-logging;inline=false,
+					   <Embed-Dependency>jboss-logging;inline=false,
 						   jta;inline=false,
 						   jtax;inline=false,
 						   orbportability;inline=false,
@@ -219,16 +212,11 @@
 						   arjuna;inline=false,
 						   narayana-jts-integration;inline=false,
 						   artemis*;inline=false,
-						   netty*;inline=false
-					   </Embed-Dependency>
-					   <Provide-Capability>
-						   osgi.service;effective:=active;objectClass=javax.transaction.TransactionManager,
+						   netty*;inline=false</Embed-Dependency>
+					   <Provide-Capability>osgi.service;effective:=active;objectClass=javax.transaction.TransactionManager,
 						   osgi.service;effective:=active;objectClass=javax.transaction.TransactionSynchronizationRegistry,
-						   osgi.service;effective:=active;objectClass=javax.transaction.UserTransaction
-					   </Provide-Capability>
-					   <Require-Capability>
-						   osgi.service;effective:=active;resolution:=optional;cardinality:=multiple;filter:=(objectClass=org.jboss.tm.XAResourceRecovery)
-					   </Require-Capability>
+						   osgi.service;effective:=active;objectClass=javax.transaction.UserTransaction</Provide-Capability>
+					   <Require-Capability>osgi.service;effective:=active;resolution:=optional;cardinality:=multiple;filter:=(objectClass=org.jboss.tm.XAResourceRecovery)</Require-Capability>
 					   <_include>src/main/resources/META-INF/MANIFEST.MF</_include>
 					   <_removeheaders>Include-Resource,Private-Package,Embed*,Bundle-ClassPath</_removeheaders>
 					   <Karaf-Commands>org.jboss.narayana.osgi.jta.command</Karaf-Commands>
@@ -281,7 +269,6 @@
 	   <profile>
 		   <id>arq-karaf-managed</id>
 		   <activation>
-			   <activeByDefault>false</activeByDefault>
 		   </activation>
 		   <build>
 			   <plugins>
@@ -342,10 +329,9 @@
 							   <configuration>
 								   <target>
 									   <copy todir="${karaf.home}/etc" overwrite="true">
-										   <fileset dir="${project.build.directory}/test-classes/etc"/>
+										   <fileset dir="${project.build.directory}/test-classes/etc"></fileset>
 									   </copy>
-									   <copy todir="${karaf.home}/system/org/jboss/narayana/osgi/narayana-osgi-jta/${project.version}"
-										   	 file="${project.build.directory}/narayana-osgi-jta-${project.version}.jar"/>
+									   <copy todir="${karaf.home}/system/org/jboss/narayana/osgi/narayana-osgi-jta/${project.version}" file="${project.build.directory}/narayana-osgi-jta-${project.version}.jar"></copy>
 								   </target>
 							   </configuration>
 						   </execution>

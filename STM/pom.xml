@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.jboss.narayana</groupId>
     <artifactId>narayana-all</artifactId>
-    <version>5.9.0.Final</version>
+    <version>5.9.0.Final-redhat-00001</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <groupId>org.jboss.narayana.stm</groupId>
@@ -12,8 +12,6 @@
   <name>Narayana: STM</name>
   <url>http://maven.apache.org</url>
   <build>
-    <plugins>
-    </plugins>
   </build>
   <dependencies>
     <dependency>
@@ -86,4 +84,3 @@
     </profile>
   </profiles>
 </project>
-

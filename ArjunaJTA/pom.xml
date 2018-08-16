@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <!-- JBoss, Home of Professional Open Source Copyright 2009, Red Hat Middleware 
 		LLC, and individual contributors as indicated by the @author tags. See the 
@@ -15,7 +15,7 @@
   <parent>
     <groupId>org.jboss.narayana</groupId>
     <artifactId>narayana-all</artifactId>
-    <version>5.9.0.Final</version>
+    <version>5.9.0.Final-redhat-00001</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -25,8 +25,6 @@
   <name>Narayana: ArjunaJTA</name>
   <description>Narayana: ArjunaJTA</description>
   <build>
-    <plugins>
-    </plugins>
   </build>
   <modules>
     <module>jta</module>

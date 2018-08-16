@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <!-- JBoss, Home of Professional Open Source Copyright 2009, Red Hat Middleware 
 		LLC, and individual contributors as indicated by the @author tags. See the 
@@ -15,7 +15,7 @@
   <parent>
     <groupId>org.jboss.narayana</groupId>
     <artifactId>narayana-all</artifactId>
-    <version>5.9.0.Final</version>
+    <version>5.9.0.Final-redhat-00001</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -62,84 +62,84 @@
     <dependency>
       <groupId>org.jboss.narayana.arjunacore</groupId>
       <artifactId>arjunacore-services</artifactId>
-      <version>${project.version}</version>
+      <version>5.9.0.Final-redhat-00001</version>
     </dependency>
     <dependency>
       <groupId>org.jboss.narayana.jta</groupId>
       <artifactId>narayana-jta</artifactId>
-      <version>${project.version}</version>
+      <version>5.9.0.Final-redhat-00001</version>
     </dependency>
     <dependency>
       <groupId>org.jboss.narayana.jts</groupId>
       <artifactId>narayana-jts-integration</artifactId>
-      <version>${project.version}</version>
+      <version>5.9.0.Final-redhat-00001</version>
     </dependency>
     <dependency>
       <groupId>org.jboss.narayana.rts</groupId>
       <artifactId>restat-web</artifactId>
-      <version>${project.version}</version>
+      <version>5.9.0.Final-redhat-00001</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>org.jboss.narayana.rts</groupId>
       <artifactId>restat-api</artifactId>
-      <version>${project.version}</version>
+      <version>5.9.0.Final-redhat-00001</version>
     </dependency>
     <dependency>
       <groupId>org.jboss.narayana.xts</groupId>
       <artifactId>jbossxts</artifactId>
-      <version>${project.version}</version>
+      <version>5.9.0.Final-redhat-00001</version>
     </dependency>
     <dependency>
       <groupId>org.jboss.narayana.xts</groupId>
       <artifactId>jbossxts</artifactId>
-      <version>${project.version}</version>
+      <version>5.9.0.Final-redhat-00001</version>
       <classifier>api</classifier>
     </dependency>
     <dependency>
       <groupId>org.jboss.narayana.xts</groupId>
       <artifactId>ws-c11</artifactId>
-      <version>${project.version}</version>
+      <version>5.9.0.Final-redhat-00001</version>
       <classifier>war</classifier>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>org.jboss.narayana.xts</groupId>
       <artifactId>ws-t11</artifactId>
-      <version>${project.version}</version>
+      <version>5.9.0.Final-redhat-00001</version>
       <classifier>client</classifier>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>org.jboss.narayana.xts</groupId>
       <artifactId>ws-t11</artifactId>
-      <version>${project.version}</version>
+      <version>5.9.0.Final-redhat-00001</version>
       <classifier>coordinator</classifier>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>org.jboss.narayana.xts</groupId>
       <artifactId>ws-t11</artifactId>
-      <version>${project.version}</version>
+      <version>5.9.0.Final-redhat-00001</version>
       <classifier>participant</classifier>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>org.jboss.narayana.xts</groupId>
       <artifactId>xts-test-servlet</artifactId>
-      <version>${project.version}</version>
+      <version>5.9.0.Final-redhat-00001</version>
     </dependency>
     <dependency>
       <groupId>org.jboss.narayana</groupId>
       <artifactId>jbosstxbridge</artifactId>
-      <version>${project.version}</version>
+      <version>5.9.0.Final-redhat-00001</version>
     </dependency>
 
     <!-- Tomcat module javadocs -->
     <dependency>
       <groupId>org.jboss.narayana.tomcat</groupId>
       <artifactId>tomcat-jta</artifactId>
-      <version>${project.version}</version>
+      <version>5.9.0.Final-redhat-00001</version>
       <scope>compile</scope>
     </dependency>
 
@@ -147,7 +147,7 @@
     <dependency>
       <groupId>org.jboss.narayana.jta</groupId>
       <artifactId>jms</artifactId>
-      <version>${project.version}</version>
+      <version>5.9.0.Final-redhat-00001</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -214,7 +214,7 @@
         <dependency>
           <groupId>org.jboss.narayana.jts</groupId>
           <artifactId>narayana-jts-jacorb</artifactId>
-          <version>${project.version}</version>
+          <version>5.9.0.Final-redhat-00001</version>
         </dependency>
       </dependencies>
     </profile>
@@ -230,12 +230,12 @@
         <dependency>
           <groupId>org.jboss.narayana.jts</groupId>
           <artifactId>narayana-jts-idlj</artifactId>
-          <version>${project.version}</version>
+          <version>5.9.0.Final-redhat-00001</version>
         </dependency>
         <dependency>
           <groupId>org.jboss.narayana.jts</groupId>
           <artifactId>idlj-idl</artifactId>
-          <version>${project.version}</version>
+          <version>5.9.0.Final-redhat-00001</version>
         </dependency>
       </dependencies>
     </profile>
@@ -251,12 +251,12 @@
         <dependency>
           <groupId>org.jboss.narayana.jts</groupId>
           <artifactId>narayana-jts-ibmorb</artifactId>
-          <version>${project.version}</version>
+          <version>5.9.0.Final-redhat-00001</version>
         </dependency>
         <dependency>
           <groupId>org.jboss.narayana.jts</groupId>
           <artifactId>ibmorb-idl</artifactId>
-          <version>${project.version}</version>
+          <version>5.9.0.Final-redhat-00001</version>
         </dependency>
       </dependencies>
     </profile>
@@ -279,12 +279,10 @@
                   <docfilessubdirs>true</docfilessubdirs>
                   <subpackages>com.arjuna.ats:com.arjuna.common:com.arjuna.orbportability:org.jboss.narayana:org.jboss.jbossts:com.arjuna.mw:com.arjuna.wsc:com.arjuna.wsc11:com.arjuna.wst:com.arjuna.wst11</subpackages>
                   <!-- use this instead of excludePackageNames because of MJAVADOC-299 -->
-                  <additionalparam>
-                    -exclude com.arjuna.ats.internal -exclude com.arjuna.common.internal
+                  <additionalparam>-exclude com.arjuna.ats.internal -exclude com.arjuna.common.internal
                     -exclude com.arjuna.orbportability.internal -exclude com.arjuna.ats.jbossatx
                     -exclude com.arjuna.mw.wstx -exclude org.jboss.jbossts.txbridge
-                    -exclude org.jboss.jbossts.xts -exclude org.jboss.jbossts.xts11
-                  </additionalparam>
+                    -exclude org.jboss.jbossts.xts -exclude org.jboss.jbossts.xts11</additionalparam>
                   <groups>
                     <group>
                       <title>Core</title>
@@ -323,8 +321,7 @@
                 <phase>package</phase>
                 <configuration>
                   <target>
-                    <jar destfile="${project.build.directory}/${project.artifactId}-${project.version}-javadoc.jar"
-                        basedir="${project.build.directory}/site/apidocs/" />
+                    <jar destfile="${project.build.directory}/${project.artifactId}-${project.version}-javadoc.jar" basedir="${project.build.directory}/site/apidocs/"></jar>
                   </target>
                 </configuration>
                 <goals>

@@ -20,22 +20,18 @@
   ~ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
   ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.jboss.narayana.tomcat</groupId>
         <artifactId>tomcat-all</artifactId>
-        <version>5.9.0.Final</version>
+        <version>5.9.0.Final-redhat-00001</version>
     </parent>
     <artifactId>tomcat-jta</artifactId>
     <name>Narayana: Tomcat JTA integration</name>
     <properties>
-        <jvm.args.byteman>
-            -Dorg.jboss.byteman.verbose -Djboss.modules.system.pkgs=org.jboss.byteman -Dorg.jboss.byteman.transform.all
-            -javaagent:${project.build.directory}/lib/byteman.jar=script:${project.build.directory}/test-classes/scripts.btm,listener:true
-        </jvm.args.byteman>
+        <jvm.args.byteman>-Dorg.jboss.byteman.verbose -Djboss.modules.system.pkgs=org.jboss.byteman -Dorg.jboss.byteman.transform.all
+            -javaagent:${project.build.directory}/lib/byteman.jar=script:${project.build.directory}/test-classes/scripts.btm,listener:true</jvm.args.byteman>
         <server.jvm.args>${jvm.args.byteman} ${jvm.args.debug}</server.jvm.args>
     </properties>
     <dependencies>
@@ -197,8 +193,7 @@
                                 </includes>
                             </artifactSet>
                             <transformers>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <manifestEntries>
                                         <arjuna-properties-file>jbossts-properties.xml</arjuna-properties-file>
                                     </manifestEntries>
@@ -223,7 +218,6 @@
         <profile>
             <id>arq-tomcat</id>
             <activation>
-                <activeByDefault>false</activeByDefault>
             </activation>
             <dependencies>
                 <dependency>
@@ -340,9 +334,7 @@
         <profile>
             <id>codeCoverage</id>
             <properties>
-                <server.jvm.args>
-                    ${jvm.args.byteman} ${jvm.args.debug} ${jvm.args.jacoco}
-                </server.jvm.args>
+                <server.jvm.args>${jvm.args.byteman} ${jvm.args.debug} ${jvm.args.jacoco}</server.jvm.args>
             </properties>
         </profile>
         <profile>

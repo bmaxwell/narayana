@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- JBoss, Home of Professional Open Source.
+<!-- JBoss, Home of Professional Open Source.
        Copyright 2016, Red Hat, Inc., and individual contributors
        as indicated by the @author tags. See the copyright.txt file in the
        distribution for a full listing of individual contributors.
@@ -18,14 +18,12 @@
        License along with this software; if not, write to the Free
        Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
        02110-1301 USA, or see the FSF site: http://www.fsf.org. -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
       <groupId>org.jboss.narayana.vertx</groupId>
       <artifactId>narayana-vertx</artifactId>
-      <version>5.9.0.Final</version>
+      <version>5.9.0.Final-redhat-00001</version>
       <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -113,8 +111,7 @@
                                     <resource>META-INF/services/io.vertx.core.spi.VerticleFactory</resource>
                                 </transformer>
                             </transformers>
-                            <artifactSet>
-                            </artifactSet>
+                            <artifactSet></artifactSet>
                             <outputFile>${project.build.directory}/${project.artifactId}-${project.version}-fat.jar</outputFile>
                         </configuration>
                     </execution>
@@ -172,12 +169,6 @@
     <profiles>
         <profile>
             <id>staging</id>
-            <repositories>
-                <repository>
-                    <id>staging</id>
-                    <url>https://oss.sonatype.org/content/repositories/iovertx-3295</url>
-                </repository>
-            </repositories>
         </profile>
     </profiles>
 

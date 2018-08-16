@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- JBoss, Home of Professional Open Source.
+<!-- JBoss, Home of Professional Open Source.
        Copyright 2016, Red Hat, Inc., and individual contributors
        as indicated by the @author tags. See the copyright.txt file in the
        distribution for a full listing of individual contributors.
@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.jboss.narayana</groupId>
     <artifactId>narayana-all</artifactId>
-    <version>5.9.0.Final</version>
+    <version>5.9.0.Final-redhat-00001</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -34,8 +34,6 @@
   <url>http://http://narayana.io</url>
  
   <build>
-    <plugins>
-    </plugins>
   </build>
 
   <profiles>

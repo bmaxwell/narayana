@@ -15,7 +15,7 @@
   <parent>
     <groupId>org.jboss.narayana.jts</groupId>
     <artifactId>narayana-jts-all</artifactId>
-    <version>5.9.0.Final</version>
+    <version>5.9.0.Final-redhat-00001</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -353,7 +353,6 @@
           <execution>
             <id>comp</id>
             <phase>compile</phase>
-            <goals/>
             <configuration>
               <excludes>
                 <exclude>**/*.*</exclude>

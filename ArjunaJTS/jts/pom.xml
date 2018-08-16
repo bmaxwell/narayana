@@ -15,7 +15,7 @@
   <parent>
     <groupId>org.jboss.narayana.jts</groupId>
     <artifactId>narayana-jts-all</artifactId>
-    <version>5.9.0.Final</version>
+    <version>5.9.0.Final-redhat-00001</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -372,7 +372,7 @@
                 </goals>
                 <configuration>
                   <skip>false</skip>
-                  <systemProperties combine.children="append" />
+                  <systemProperties combine.children="append"></systemProperties>
                   <excludes>
                     <exclude>**/common/**</exclude>
                     <exclude>**/exceptions/**</exclude>
@@ -488,7 +488,7 @@
                 <configuration>
                   <argLine>${idlj.boot.args}</argLine>
                   <skip>false</skip>
-                  <systemProperties combine.children="append" />
+                  <systemProperties combine.children="append"></systemProperties>
                   <excludes>
                     <exclude>**/common/**</exclude>
                     <exclude>**/exceptions/**</exclude>
@@ -593,7 +593,7 @@
                 </goals>
                 <configuration>
                   <skip>false</skip>
-                  <systemProperties combine.children="append" />
+                  <systemProperties combine.children="append"></systemProperties>
                   <excludes>
                     <!-- exclude tests that load the byteman agent (BMUnitRunner) -->
                     <exclude>**/RecoveredServerTransactionUnitTest.java</exclude>

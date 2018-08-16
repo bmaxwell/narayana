@@ -19,7 +19,7 @@
   <parent>
     <groupId>org.jboss.narayana.rts</groupId>
     <artifactId>restat</artifactId>
-    <version>5.9.0.Final</version>
+    <version>5.9.0.Final-redhat-00001</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -156,7 +156,6 @@
     <profile>
       <id>remote</id>
       <activation>
-        <activeByDefault>false</activeByDefault>
       </activation>
       <build>
         <plugins>
